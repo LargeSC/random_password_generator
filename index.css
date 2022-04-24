@@ -1,0 +1,143 @@
+html, body {
+    margin-top: 10px;
+    padding: 0;
+    background: #1C1C1C;
+    font-family: karla, sans-serif;
+}
+
+main{
+    background: #1F2937;
+    max-width: 350px;
+    min-width: 300px;
+    margin: auto;
+    padding: 10px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* === HEADER === */
+h2{
+    color: #fff;
+    /* max-width: 80%; */
+}
+
+h2 span{
+    color: #4ADF86;
+}
+
+.subheader{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 28px;
+    color: #D5D4D8;
+    margin: 0;
+}
+
+.small{
+    font-size: 0.75rem
+}
+
+/* === PARAMETERS === */
+
+.parameters{
+    /* This is not really doing what I want, I need to center vertically the range and button */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid green; */
+    padding: 1em;
+}
+
+button{
+    background: #10B981;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+    border: none;
+    color: #fff;
+    margin-right: 1.5em;
+    padding: 1em 1.2em
+
+}
+
+.range-text{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+.range{
+    background: #7a7a82;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    box-shadow: 0 2px 35px rgba(0, 0, 0, 0.4555);
+    border-radius: 10px;
+    cursor: pointer;
+    scroll-behavior:smooth;
+    max-width: 100%;
+    background:  #10B981;
+    margin: 0;
+}
+
+.range input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background:  #10B981;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s ease;
+  }
+
+/* === PASSWORDS === */
+
+.pass-container{
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px 0px;
+}
+
+.password{
+    background: #273549;
+    border-radius: 6px; 
+    border: none;
+    margin: 4px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5em 0;
+    max-width: 150px;
+    text-align: center;
+
+    color: #55F991;
+}
+
+/* === MEDIA QUERIES - LARGER SCREENS === */
+
+@media (min-width: 500px) {
+    main{
+        transform: scale(1.30) translateY(30%)
+    }
+}
+
+@media (min-width: 800px) {
+    main{
+        transform: scale(1.50) translateY(30%)
+        
+    }
+}

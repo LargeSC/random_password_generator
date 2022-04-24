@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Karla:wght@400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <title>Random Password generator</title>
+    </head>
+    <body>
+        <main>
+            <div class="header">
+                <h2>Generate a <span>random password</span></h2>
+                <p class="subheader">Never use an insecure password again</p>
+            </div>
+            <div class="parameters">
+                <button onclick="generatePassword()">Generate passwords</button>
+                
+                <!-- The idea for this range selector was taken from Foolish Developer https://www.foolishdeveloper.com/2022/03/javascript-password-generator.html -->
+                <div class="range-holder">
+                    <input type="range" class="range" min=4 max=14 value=10 id="pass-len" oninput="document.getElementById('pass-len-text').textContent=this.value+' characters'">
+                    <p id="pass-len-text" class="range-text">10 characters</p>
+                </div>
+            </div>
+            <div class="pass-container" id="pass-container">
+                <input type="text" class="password" value="..."></input>
+                <input type="text" class="password" value="..."></input>
+                <input type="text" class="password" value="..."></input>
+                <input type="text" class="password" value="..."></input>
+            </div>
+            <p class="subheader small">Select password to copy to clipboard</p>
+        </main>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
