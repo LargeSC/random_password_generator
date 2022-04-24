@@ -14,8 +14,8 @@
                 <p class="subheader">Never use an insecure password again</p>
             </div>
             <div class="parameters">
-                <button onclick="generatePassword()">Generate passwords</button>
-                
+                <!-- <button id="new-pass-btn">Generate passwords</button>
+                 -->
                 <!-- The idea for this range selector was taken from Foolish Developer https://www.foolishdeveloper.com/2022/03/javascript-password-generator.html -->
                 <div class="range-container">
                     <input type="range" class="range" min=4 max=14 value=10 id="pass-len" oninput="document.getElementById('pass-len-text').textContent=this.value+' characters'">
@@ -29,6 +29,15 @@
                 <input type="text" class="password" value="..."></input>
             </div>
             <p class="subheader small">Select password to copy to clipboard</p>
+            <div class="parameters">
+                <button id="new-pass-btn">Generate passwords</button>
+                
+                <!-- The idea for this range selector was taken from Foolish Developer https://www.foolishdeveloper.com/2022/03/javascript-password-generator.html -->
+                <!-- <div class="range-container">
+                    <input type="range" class="range" min=4 max=14 value=10 id="pass-len" oninput="document.getElementById('pass-len-text').textContent=this.value+' characters'">
+                    <p id="pass-len-text" class="range-text">10 characters</p>
+                </div> -->
+            </div>
         </main>
         
         <script src="index.js"></script>
