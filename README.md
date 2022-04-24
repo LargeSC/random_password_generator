@@ -1,16 +1,13 @@
-# title(){return this.options.title||this.options.name}
+# Random Password Generator
 
-## Supporting Scrimba
+## About this project
+This project was done as part of my Scrimba Frontend Developer path.
 
-Since 2017, we have created over 20 free courses on Scrimba, and we're going to
-continue launching free courses. But to pay our bills, we have to charge once
-in a while. So if you've ever wanted to "give back" to Scrimba, you can do that by buying
-	one of our paid courses
 
-- [Become a professional React developer](https://scrimba.com/course/greact)
-- [The Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive)
-- [The Ultimate JavaScript Bootcamp](https://scrimba.com/course/gjavascript)
+## How to use the password generator
 
-	It would also mean the world to us if you share the courses.  
+1. Select the length of your password with the slider on the right.
+2. Click on generate password.
+3. Select one of the 4 options below to copy it to your clipboard.
+4. Use your password 😊🙌🏼
 
-Happy Coding!
