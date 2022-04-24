@@ -10,6 +10,9 @@ let data = [].concat(lowerCase,upperCase,symbols,numbers)
 
 // console.log(data)
 
+newPassBtn = document.getElementById("new-pass-btn")
+
+newPassBtn.addEventListener('click',generatePassword)
 
 function generatePassword(){
     passLen = document.getElementById("pass-len").value
@@ -40,3 +43,10 @@ function copyPass(){
     setTimeout(() => {document.activeElement.value = "Copied"}, 250);
     setTimeout(() => {document.activeElement.value = copyPass}, 600);
 }
+
+document.body.addEventListener("keydown", function (event) {
+    if (event.code === "Enter") {
+        // generatePassword()
+        newPassBtn.click()
+    }
+});
